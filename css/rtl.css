@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'droid-sans';
-    src: url('../fonts/droid-sans.ttf');
-}
-
-.ar {
-    font-family: 'droid-sans' !important;    
-}
 
 #leftsidebar{
     right:0;
@@ -205,3 +197,49 @@ tfoot tr th {
 .alert {
 	text-align: right;
 }
+
+[type="checkbox"] + label {
+	padding-left: 0px;
+	padding-right: 26px;	
+}
+
+[type="checkbox"]:checked + label:before {
+	left: auto;
+	right: 13px;
+}
+
+[type="checkbox"] + label:before, [type="checkbox"]:not(.filled-in) + label:after {
+	right: 0;
+	left: auto;
+}
+
+[type="checkbox"].filled-in + label:before, [type="checkbox"].filled-in + label:after {
+	right: 0;
+	left: auto;
+}
+[type="checkbox"].filled-in:checked + label:before {
+	right: 11px;
+	left: auto;
+}
+
+[type="checkbox"].filled-in:not(:checked) + label:before{
+	right: 11px;
+	left: auto;
+}
+
+[type="radio"] + label:before, [type="radio"] + label:after {
+	right: 0;
+	left: auto;
+}
+
+[type="radio"]:checked + label {
+	padding-right: 26px;
+	padding-left: 0;
+}
+
+[type="radio"]:not(:checked) + label {
+	padding-right: 26px;
+	padding-left: 0;
+}
+
+
