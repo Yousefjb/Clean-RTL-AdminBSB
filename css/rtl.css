@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'droid-sans';
+    src: url('../fonts/droid-sans.ttf');
+}
+
+.ar {
+    font-family: 'droid-sans' !important;    
+}
 
 #leftsidebar{
     right:0;
